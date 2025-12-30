@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hyacinth K9</title>
+  <style>
+    :root {
+      --white: #ffffff;
+      --sage: #dadfee;
+      --olive: #a3af4d;
+      --dark: #2e2e2e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--sage);
+      padding: 1.5rem;
+      border-bottom: 4px solid var(--olive);
+    }
+
+    header h1 {
+      color: var(--olive);
+      font-size: 2.2rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--olive);
+    }
+
+    section {
+      padding: 4rem 10%;
+    }
+
+    section:nth-child(even) {
+      background: var(--sage);
+    }
+
+    h2 {
+      color: var(--olive);
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+    }
+
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    footer {
+      background: var(--olive);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--olive);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <h1>Hyacinth K9</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#packages">Training Packages</a>
+      <a href="#contact">Contact</a>
+      <a href="#philosophy">Our Philosophy</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT PAGE -->
+  <section id="about">
+    <h2>Company & Trainer Information</h2>
+    <div class="card">
+      <p>
+        Hyacinth K9 was created to serve dogs and owners who need real-world reliability, clear communication, and honest training.
+        This business was built for people who want a functional dog—not just obedience in a classroom, but calm, confident behavior
+        in everyday life.
+      </p>
+      <br />
+      <p>
+        <strong>Owner & Head Trainer:</strong><br />
+        Hyacinth K9 is owner-operated and trainer-led. Every dog is trained with intention, structure, and respect.
+        Training is customized to the dog in front of us—not a cookie-cutter system.
+      </p>
+      <br />
+      <p>
+        We train all breeds, temperaments, and behavior levels. While we do not specialize in bird dogs,
+        we are always willing to evaluate and attempt training based on the individual dog and goals.
+      </p>
+    </div>
+  </section>
+
+  <!-- PACKAGES PAGE -->
+  <section id="packages">
+    <h2>Training Packages</h2>
+    <div class="packages">
+      <div class="card">
+        <h3>Basic Obedience</h3>
+        <p>
+          Foundations for everyday life: sit, down, place, recall, leash manners, and engagement.
+          Ideal for young dogs or owners starting from scratch.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Advanced Obedience</h3>
+        <p>
+          Off-leash reliability, duration, distance, distractions, and real-world proofing.
+          Built for dogs that need control in public and high-distraction environments.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Behavior Modification</h3>
+        <p>
+          Addressing reactivity, aggression, fear, anxiety, and poor impulse control.
+          This package focuses on clarity, boundaries, and confidence-building.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Board & Train</h3>
+        <p>
+          Intensive training where your dog stays with the trainer.
+          Best for owners who want fast, structured results with strong foundations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT PAGE -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="card">
+      <p>
+        Ready to get started or have questions? Use the form below to reach out.
+        We will respond as soon as possible.
+      </p>
+      <br />
+      <!-- Replace the src link with your real Jotform embed link -->
+      <iframe src="https://form.jotform.com/your-form-id"></iframe>
+    </div>
+  </section>
+
+  <!-- EXTRA PAGE: PHILOSOPHY -->
+  <section id="philosophy">
+    <h2>Training Philosophy</h2>
+    <div class="card">
+      <p>
+        Hyacinth K9 believes in fair, balanced training built on communication and accountability.
+        Dogs thrive when expectations are clear and leadership is consistent.
+      </p>
+      <br />
+      <p>
+        Our goal is not perfection—it is reliability. A dog that can exist calmly in the real world
+        is a dog that has been trained correctly.
+      </p>
+      <br />
+      <p>
+        We do not promise overnight fixes. We promise honest work, clear standards,
+        and results that last.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Hyacinth K9 · Functional Training · Real Results</p>
+  </footer>
+
+</body>
+</html>
